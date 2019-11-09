@@ -1,4 +1,4 @@
-﻿=== WP Staging - DB & File Duplicator & Migration  === 
+=== WP Staging - DB & File Duplicator & Migration  === 
 
 Author URL: https://wordpress.org/plugins/wp-staging
 Plugin URL: https://wordpress.org/plugins/wp-staging
@@ -9,10 +9,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: staging, duplication, cloning, clone, migration, sandbox, test site, testing, backup, post, admin, administration, duplicate posts
 Requires at least: 3.6+
 Tested up to: 5.2
-Stable tag: {{version}}
+Stable tag: 2.6.4
 Requires PHP: 5.3
 
-A duplicator plugin! Clone, duplicate and migrate live sites to independent staging and development sites that are available only to administrators.
+A duplicator plugin - clone/move, duplicate & migrate live websites to independent staging and development sites that are accessible​ by authorized users only.
 
 == Description == 
 
@@ -33,7 +33,6 @@ WP Staging can help you to protect your website from being broken or unavailable
 [youtube https://www.youtube.com/watch?v=Ye3fC6cdB3A]
 
 <p>Note: WordPress 5.x has been shipped with a new visual editor called Gutenberg. Use WP Staging to check if Gutenberg editor is working as intended on your website and that all used plugins are compatible with that new editor.</p>
-
 
 = Main Features =
 
@@ -74,7 +73,6 @@ WP Staging can help you to protect your website from being broken or unavailable
 3. Customize theme, configuration, update or install new plugins
 4. Test everything on your staging site
 5. If everything works on the staging site start the migration and copy all modifications to your production site!
-
 
 <h3> Why should I use a staging website? </h3>
 
@@ -154,6 +152,19 @@ https://wp-staging.com
 4. Finish!
 
 == Changelog ==
+
+= 2.6.4 =
+* Fix: Broken image folder with duplicate leading slash after cloning
+
+= 2.6.3 =
+* New Support for WordPress 5.2.4
+* New: Allow wildcards for excluding files
+* New: Add hook "wpstg_clone_action_staging" to execute code on staging site after cloning 
+* Tweak: Improved support for custom uploads folder if user customized UPLOADS constant or upload_path in DB
+* Fix: Better compatibility with Windows IIS server
+* Fix: External links are broken after cloning if ABSPATH is equal to /www/
+* Fix: use an alternative method for file_put_contents as it is not supported on all systems due to file permission issues
+* Fix: Redundant and duplicated update comments in wp-config.php in staging site
 
 
 = 2.6.2 =
@@ -250,21 +261,16 @@ https://wp-staging.com
 * Tweak: clean up search & replace method
 * Tweak: Better FAQ
 
-= 2.4.8 =
-* Fix: Prevent throwing an error when table prefix of table usermeta cannot be changed
-* Fix: WP Staging does not run with old WordPress version 3.2
-* Fix: Do not show rating box on posts and pages editor
-* New: Support WordPress 5.0.3
-* New: Add FAQ to footer
-
-= 2.4.7 =
-* New: Support WordPress 5.0.2
-
-= 2.4.6 =
-* Fix: Can not login to staging site . Changed minimum user capability to 'manage_options' instead 'administrator' 
-
 
 Complete changelog: [https://wp-staging.com/wp-staging-changelog](https://wp-staging.com/wp-staging-changelog)
 
 == Upgrade Notice ==
 * Install this version for supporting latest WordPress version
+
+* New: Allow wildcards for excluding files
+* New: Add hook "wpstg_clone_action_staging" to execute code on staging site after cloning 
+* Tweak: Improved support for custom uploads folder if user customized UPLOADS constant or upload_path in DB
+* Fix: Better compatibility with Windows IIS server
+* Fix: External links are broken after cloning if ABSPATH is equal to /www/
+* Fix: use an alternative method for file_put_contents as it is not supported on all systems due to file permission issues
+* Fix: Redundant and duplicated update comments in wp-config.php in staging site
