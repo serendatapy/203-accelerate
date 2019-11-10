@@ -14,19 +14,36 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div class="main-content" role="main">
-            <?php while ( have_posts() ) : the_post(); 
-            $image_1 = get_field("image_1");
-            $size = "medium";
-            ?>
+	<div /*id="primary"*/ class="site-content">
+		<div class="main-content" /*role="main"*/>
+				 
+					 <?php while (have_posts()) : the_post(); 
+					 $size = "full";
+                     $services = get_field('services');
+                     $client = get_field('client');
+                     $link = get_field('site_link');
+                     $image_1 = get_field('image_1');
+                    ?>
 
-            <!--<p> Is this working?! </p>-->
+                    <article class="case-study-archive">
+		                <aside class="case-study_sidebar-archive">
+			                <h2><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
+			                <h4><?php echo $services; ?></h4>
+			                <h3>Client: <?php echo $client; ?></h3>
+			
+			                <?php the_content(); ?>
 
-				<?php the_content(); ?>
-			<?php endwhile; // end of the loop. ?>
+			                <p class="read-more-link"><strong><a href="<?php echo $link; ?>">Visit Live Site</a></strong></p>
+		                </aside>
+                    </article>
+                    
+					 	<div class="case-study-images-archive">
+					 		<?php echo wp_get_attachment_image($image_1, $size); ?>
+                        </div>
+
+                          
+					 <?php endwhile; //end of loop. ?> 
 		</div><!-- .main-content -->
-
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

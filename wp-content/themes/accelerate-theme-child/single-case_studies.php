@@ -44,10 +44,14 @@ get_header(); ?>
 			<?php if($image_3){
 				echo wp_get_attachment_image($image_3, $size);
 			}?>
+			
+			<p class="read-more-link"><strong><a href="http://localhost/203-accelerate/case-studies/">Back to Work</a></strong></p>
+
 		</div>
 
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

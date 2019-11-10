@@ -50,6 +50,7 @@ Text Domain:  accelerate-theme-child
 aside.case-study_sidebar{
 	float:left;
 	width:300px;
+	margin-top: 5%;
 }
 .case-study_sidebar h2{
 	padding: 0;
@@ -70,7 +71,9 @@ aside.case-study_sidebar{
    }
 div.case-study-images{
 	float:left;
-	width:600px;
+	/*width: 100%;*/
+	height: auto;
+	margin-bottom: 5%;
 }
 
 
@@ -101,3 +104,34 @@ div.case-study-images{
 .individual-featured-work {
 	margin: 0.5%;
    }
+
+
+   /*Case Studies Archive*/
+aside.case-study_sidebar-archive{
+	float:left;
+	width:300px;
+	margin-top: 5%;
+}
+.case-study_sidebar-archive h2{
+	padding: 0;
+	margin: 0;
+   }
+.case-study_sidebar-archive h4{
+ 	padding: 0;
+ 	margin: 0;
+ 	font-size: 0.75em;
+ 	color: grey;
+ 	font-weight: lighter;
+}
+.case-study_sidebar-archive h3{
+	padding: 0;
+	margin: 0;
+	font-size: 0.90em;
+	font-weight: lighter;
+   }
+div.case-study-images-archive{
+	float:left;
+	/*width: 100%;*/
+	height: auto;
+	margin-bottom: 5%;
+}
