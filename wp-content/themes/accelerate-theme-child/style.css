@@ -135,3 +135,32 @@ div.case-study-images-archive{
 	height: auto;
 	margin-bottom: 5%;
 }
+.social-media-menu {
+	float: right;
+}
+
+.social-media-navigation {
+	float: right;
+	width: 40%;
+	
+}
+.social-media-navigation ul li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.social-media-navigation li{
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #ffffff;
+	background-color: #191512;
+}
+.site-footer{
+	color: #ffffff;
+}

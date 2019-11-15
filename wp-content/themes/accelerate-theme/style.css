@@ -626,6 +626,9 @@ a.button, a.button:link {
     font-size: .9em;
     line-height: 1.5;
 }
+.site-footer a {
+    color: #ffffff;
+}
 /* End FOOTER STYLES */
 
 /* Media Queries */
@@ -698,10 +701,8 @@ a.button, a.button:link {
 		width: 50%;
 		float: left;
 	}
-	.social-media-navigation {
-		float: right;
-		width: 20%;
-	}
+
+
 }
 @media (min-width: 400px) {
 	#navigation .pagination {
