@@ -164,3 +164,30 @@ div.case-study-images-archive{
 .site-footer{
 	color: #ffffff;
 }
+/*******Ninja Fields Styles*********/
+
+#nf-field-1-container, #nf-field-2-container, #nf-field-3-container, #nf-field-4 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+
+#nf-field-1-container{
+	width: 49%;
+	float: left;
+	clear: none;
+	margin-right: 2%;
+	
+}
+#nf-field-2-container{
+	width: 49%;
+	float: left;
+	clear: none;
+}
+#nf-field-4{
+	background: #45ac9d;
+	width: 30%;
+	float: right;
+}
+
+p {
+	font: 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
