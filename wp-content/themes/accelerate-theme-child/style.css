@@ -191,3 +191,69 @@ div.case-study-images-archive{
 p {
 	font: 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 }
+
+/*Portfolio Projects*/
+aside.projects_sidebar{
+	float:left;
+	width:300px;
+	margin-top: 5%;
+}
+.projects_sidebar h2{
+	padding: 0;
+	margin: 0;
+   }
+.projects_sidebar h4{
+ padding: 0;
+ margin: 0;
+ font-size: 0.75em;
+ color: grey;
+ font-weight: lighter;
+}
+.projects_sidebar h3{
+	padding: 0;
+	margin: 0;
+	font-size: 0.90em;
+	font-weight: lighter;
+   }
+div.projects-images{
+	float:left;
+	/*width: 100%;*/
+	height: auto;
+	margin-bottom: 5%;
+}
+
+/*about page*/
+aside.about_sidebar{
+	float:left;
+	width:300px;
+	margin-top: 5%;
+}
+.about_sidebar h2{
+	padding: 0;
+	margin: 0;
+   }
+.about_sidebar h4{
+ padding: 0;
+ margin: 0;
+ font-size: 0.75em;
+ color: grey;
+ font-weight: lighter;
+}
+.about_sidebar h3{
+	padding: 0;
+	margin: 0;
+	font-size: 0.90em;
+	font-weight: lighter;
+   }
+div.about-images{
+	float:left;
+	/*width: 100%;*/
+	height: auto;
+	margin-bottom: 5%;
+}
+.overlay-text {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	color: white;
+}

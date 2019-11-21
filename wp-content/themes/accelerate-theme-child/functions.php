@@ -30,5 +30,20 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+
+    register_post_type('playground',
+        array(
+            'labels' => array(
+                'name' => __('Playground Tests'),
+                'singular_name' => __('Playground Test')
+
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'playground'),
+        )
+    );
+    
 }
+
 add_action( 'init', 'create_custom_post_types' );
