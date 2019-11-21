@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>			
 					<?php the_content(); ?>	
 			<?php endwhile; // end of the loop. ?>
-</div>
+		</div>
 	</div>
 
 	<div id="primary" class="site-content">
@@ -23,7 +23,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post();
 		
-			$size = "full";
+			$size = "medium";
 			$intro_title = get_field('intro_title');
 			$intro_description = get_field('intro_description');
 			$title_1 = get_field('title_1');
@@ -39,49 +39,65 @@ get_header(); ?>
 			$description_3 = get_field('description_3');
 			$description_4 = get_field('description_4');  ?>
 		
-		<div id='intro'>	
+		<div id='intro' class="part_intro">	
 			<h2><?php echo $intro_title; ?></h2>
 			<?php echo $intro_description; ?>	
 		</div>
 		
-		<div id='part_1'>
-			<div class="about-images">
+		<div id="section_1" class="about_section">
+			<div id='part_1' class="about_column_img">
+				<div class="about-images">
 					<?php if($image_1){ 
 					echo wp_get_attachment_image($image_1, $size); 
 					}?>
-			</div>		
-			<h2><?php echo $title_1; ?></h2>
-			<?php echo $description_1; ?>	
-		</div>
-
-		<div id='part_2'>
-			<h2><?php echo $title_2; ?></h2>
-			<?php echo $description_2; ?>
-			<div class="about-images">
-				<?php if($image_2){ 
-					echo wp_get_attachment_image($image_2, $size); 
-				}?>
-			</div>	
-		</div>
-
-		<div id='part_3'>
-			<div class="about-images">
-				<?php if($image_3){ 
-					echo wp_get_attachment_image($image_3, $size); 
-				}?>
+				</div>			
 			</div>
-			<h2><?php echo $title_3; ?></h2>
-			<?php echo $description_3; ?>	
+			<div class="about_column_text">
+				<h2><?php echo $title_1; ?></h2>
+				<?php echo $description_1; ?>
+			</div>
 		</div>
 
-		<div id='part_4'>
-			<h2><?php echo $title_4; ?></h2>
-			<?php echo $description_4; ?>
-			<div class="about-images">
-				<?php if($image_4){ 
-					echo wp_get_attachment_image($image_4, $size); 
-				}?>
+		<div id="section_2" class="about_section">
+			<div class="about_column_text">
+				<h2><?php echo $title_2; ?></h2>
+				<?php echo $description_2; ?>
+			</div>
+			<div id='part_2' class="about_column_img">
+				<div class="about-images">
+					<?php if($image_2){ 
+						echo wp_get_attachment_image($image_2, $size); 
+					}?>
+				</div>
+			</div>
+		</div>
+		
+		<div id="section_3" class="about_section">
+			<div id='part_3' class="about_column_img">
+				<div class="about-images">
+					<?php if($image_3){ 
+						echo wp_get_attachment_image($image_3, $size); 
+					}?>
+				</div>
+			</div>
+			<div class="about_column_text">
+				<h2><?php echo $title_3; ?></h2>
+				<?php echo $description_3; ?>
 			</div>	
+		</div>
+
+		<div id="section_4" class="about_section">
+			<div class="about_column_text">
+				<h2><?php echo $title_1; ?></h2>
+				<?php echo $description_1; ?>
+			</div>
+			<div id='part_4' class="about_column_img">
+				<div class="about-images">
+					<?php if($image_4){ 
+						echo wp_get_attachment_image($image_4, $size); 
+					}?>
+				</div>	
+			</div>
 		</div>
 
 

@@ -257,3 +257,31 @@ div.about-images{
 	margin-right: 25%;
 	color: white;
 }
+.part_intro{
+	float: left;
+}
+.part_pic_left{
+	float: left;
+	width: 25%;
+}
+.part_pic_right{
+	float: left;
+	width: 25%;
+}
+.about_section_text{
+	/*width: 50%;*/
+}
+.about_section{
+	content: "";
+	display: table;
+	clear: both;
+}
+.about_column_text{
+	width: 70%;
+	float: left;
+}
+.about_column_img{
+	padding-top: 5%;
+	width: 30%;
+	float: left;
+}
