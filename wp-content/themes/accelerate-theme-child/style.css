@@ -268,6 +268,8 @@ div.about-images{
 	float: left;
 	width: 25%;
 }
+
+/*******************ABOUT SECTION******************/
 .about_section_text{
 	/*width: 50%;*/
 }
@@ -285,4 +287,29 @@ div.about-images{
 	padding: 10% 2.5% 0%;
 	width: 25%;
 	float: left;
+}
+/*************404 ERROR PAGE**********************/
+.error-page {
+    background: url("https://media.giphy.com/media/xdUIwnITXl3OM/giphy.gif")  no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 5em;
+    padding: 8em 0;
+	text-align: center;
+}
+.error-content h1, h2, h3{
+	color: #fff;
+	font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+
+}
+.error-content h1 {
+	font-weight:bold;
+	font-size: 3.5em;
+	line-height: 1.5;
+	margin: 0 2%;
+
+}
+.error-content h3 {
+    font-size: 2em;
+    font-weight: normal;
+	margin: 0 0 3em;
 }

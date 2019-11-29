@@ -10,9 +10,11 @@
 
 get_header(); ?>
 	
-	<div id="primary" class="site-content">
-		<div id="content" role="main">	
-			<h1>THIS ISN'T WORKING OUT, BUT IT'S NOT YOU, IT'S YOUR MUM </h1>
+	<div id='about_title' class="error-page error-content">
+		<div class="overlay-text">	
+			<h1>404 = That page might be out there... </h1>
+			<h3>Yep!</h3>
+			<h3>Let's.... return to the <a href="http://localhost/203-accelerate">HOMEPAGE</a> shall we? <h3>
 		</div>
 	</div>
 
