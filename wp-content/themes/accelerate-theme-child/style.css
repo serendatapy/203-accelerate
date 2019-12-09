@@ -21,22 +21,29 @@ Text Domain:  accelerate-theme-child
 	background: #45ac9d;
 }
 
+/*******************POSTS*********************/
+.recent-posts {
+	clear: both;
+}
+
 .blog-post {
-	width: 50%;
+	width: 45%;
 	float: left;
 	margin-bottom: 2em;
-	clear: both;
+	margin-right: 2.5%;
+	/*clear: both;*/
 }
 
 .blog-post h4 {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
-  margin: 2em 0 .5em;
+  margin: 2em 0 0.5em;
 }
 
 .blog-post h3 {
-	font-size: 1.5em;
+	font: 700 1.25em/2 'Montserrat', 'Open Sans', Arial, sans-serif;
+	color: black;
 }
 
 .read-more-link {
@@ -46,7 +53,7 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
-/*Case Studies*/
+/******************Case Studies*******************/
 aside.case-study_sidebar{
 	float:left;
 	width:300px;
@@ -106,7 +113,7 @@ div.case-study-images{
    }
 
 
-   /*Case Studies Archive*/
+   /***************Case Studies Archive***************/
 aside.case-study_sidebar-archive{
 	float:left;
 	width:300px;
@@ -164,7 +171,7 @@ div.case-study-images-archive{
 .site-footer{
 	color: #ffffff;
 }
-/*******Ninja Fields Styles*********/
+/*************Ninja Fields Styles******************/
 
 #nf-field-1-container, #nf-field-2-container, #nf-field-3-container, #nf-field-4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
@@ -192,7 +199,7 @@ p {
 	font: 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 }
 
-/*Portfolio Projects*/
+/*******************Portfolio Projects****************/
 aside.projects_sidebar{
 	float:left;
 	width:300px;
@@ -312,4 +319,21 @@ div.about-images{
     font-size: 2em;
     font-weight: normal;
 	margin: 0 0 3em;
+}
+
+/***************Tweeter Feed****************/
+
+.tweets {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font: 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	margin: 1em auto;
+
+}
+.twitter-follow-container {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
 }
